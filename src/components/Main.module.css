@@ -1,0 +1,12 @@
+.card {
+	width: 90%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 20px;
+	position: relative;
+	z-index: 1;
+}

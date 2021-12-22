@@ -1,0 +1,48 @@
+.modal {
+	position: absolute;
+	inset: 0;
+	z-index: 2;
+	background-color: rgba(128, 128, 128, 0.87);
+	backdrop-filter: blur(1px);
+	display: grid;
+	place-items: center;
+}
+
+.information {
+	width: 90%;
+	max-width: 800px;
+	animation: move-down 0.8s both;
+}
+
+.information > h1 {
+	background-color: rgba(137, 43, 226, 0.952);
+	color: rgba(255, 255, 255, 0.884);
+	font-size: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
+	padding: 20px;
+	border-radius: 20px 20px 0 0;
+}
+
+.description {
+	padding: 50px 20px;
+	background-color: rgba(255, 255, 255, 0.911);
+	border-radius: 0 0 20px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.description h3 {
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+
+@keyframes move-down {
+	from {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
